@@ -1,5 +1,5 @@
 FROM gcc
 ADD . /aplication
 WORKDIR /aplication
-RUN gcc -o cfile main.c
+RUN gcc -o cfile mainlock.c
 CMD ["./cfile"]

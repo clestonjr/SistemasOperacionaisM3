@@ -1,0 +1,22 @@
+version: "2"
+services:
+  main01:
+    build: .
+    volumes:
+       - ./folder:/aplication/folder  
+    environment:
+       DOCKER_NAME: LOCK FILE01  
+  main02:
+    build: .
+    volumes:
+       - ./folder:/aplication/folder  
+    environment:
+       DOCKER_NAME: LOCK FILE02  
+  main03:
+    build: .
+    volumes:
+       - ./folder:/aplication/folder  
+    environment:
+       DOCKER_NAME: LOCK FILE03  
+
+
